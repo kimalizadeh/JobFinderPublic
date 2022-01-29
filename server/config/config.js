@@ -2,8 +2,8 @@ const config = {
   development: {
     username: process.env.DBUSER,
     password: process.env.DBPASS,
-    database: "heroku_f68aee06d98e17a",
-    host: "us-cdbr-east-05.cleardb.net",
+    database: process.env.DATABASE,
+    host: process.env.HOST,
     dialect: "mysql"
   },  
   test: {
@@ -16,8 +16,8 @@ const config = {
   production: {
     username: process.env.DBUSER,
     password: process.env.DBPASS,
-    database: "heroku_f68aee06d98e17a",
-    host: "us-cdbr-east-05.cleardb.net",
+    database: process.env.DATABASE,
+    host: process.env.HOST,
     dialect: "mysql"
   }
 }
