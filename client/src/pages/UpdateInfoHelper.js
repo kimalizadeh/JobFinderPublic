@@ -1,0 +1,29 @@
+
+import React, { useEffect, useState } from "react";
+import {useParams, useHistory} from 'react-router-dom';
+import UpdateUser from "./UpdateUser";
+import axios from "axios";
+import UpdateInfoForm from "./UpdateInfoForm";
+
+function UpdateInfoHelper() {
+    let { id } = useParams();
+  const [data, setData] = useState(null);
+
+
+    useEffect(() => {
+         axios.get(`https://jobfinder-fsd01.herokuapp.com/users/account/${id}`,{
+          headers: {
+            accessToken: localStorage.getItem("accessToken"),
+          },
+         }).then((response) => {
+            response.data.password = "";
+            setData(response.data);
+
+          });
+        
+    }, []);
+    console.log(data);
+  return data ? <UpdateInfoForm preloadedValues={data}/> : <div>Loading...</div>
+}
+
+export default UpdateInfoHelper;

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+.App {
+  text-align: center;
+}
+
+body {
+  color: #555 !important;
+  font-family: "Merriweather", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif !important;
+  background-color: #fff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*--*/
+/* inputs */
+button,
+input,
+select {
+  color: #868268 !important;
+  font-family: "Merriweather" !important;
+  font-size: 12pt !important;
+  background-color: white !important;
+  border: 2px #b8b284 solid !important;
+  border-radius: 5px !important;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  padding: 0.75em 1em;
+  transition-duration: 0.4s;
+  box-shadow: 1px 1px 5px #868268 !important;
+}
+
+button:link,
+input[type="submit"]:link,
+input[type="reset"]:link {
+  box-shadow: 2px 2px 5px #868268;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  color: #4d4c4b;
+  /* background-color: #b8b284; */
+  background: #dddac5 !important;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+  box-shadow: 1px 1px 1px #868268;
+}
+/*--*/
+/*---*/
+
+h1,
+h2,
+h3 {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  text-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4) !important;
+}
+
+.progressbar {
+  width: 50%;
+  height: 10px;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+}
+
+.progressbar div {
+  width: 33.3%;
+  height: 100%;
+  background-color: #4d4c4b;
+  border-radius: 2px;
+}
+
+/* pagination css*/
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  color: #4d4c4b;
+  background-color: #b8b284;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  background-color: white !important;
+  border: 2px #b8b284 solid !important;
+  color: #868268 !important;
+}
+
+.paginationActive a {
+  background-color: white !important;
+  border: 2px #b8b284 solid !important;
+  color: #868268 !important;
+}
+
+.paginationDisabled a {
+  color: rgb(236, 236, 236);
+  background-color: rgb(236, 236, 236);
+}
+.btn-space {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* table {
+  border: 1px solid #7375cc !important;
+  border-radius: 5px !important;
+  border: solid 3px #868268 !important;
+} */
+
+table {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24) !important;
+  border-radius: 5px !important;
+  padding: 1em !important;
+  padding-top: 20px !important;
+  background-color: #fafcf6 !important;
+  border: solid 3px #868268 !important;
+  margin: 40px auto !important;
+}
+thead td {
+  background-color: #dfdab4 !important;
+}
+tr {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24) !important;
+  border-radius: 5px !important;
+  /* padding: 1em !important; */
+  background-color: #ffffff !important;
+  border: 2px #b8b284 solid !important;
+}
+
+form {
+  width: 80% !important;
+  margin: auto !important;
+  background-color: #fafcf6 !important;
+  border: solid 3px #868268 !important;
+  border-radius: 10px !important;
+  padding: 1rem !important;
+  min-width: 200px !important;
+}
+
+.green-btn {
+  background-color: #24d4bd !important;
+  border: none !important;
+  color: white !important;
+  font-size: large !important;
+  font-weight: bold !important;
+}
+.green-btn:hover {
+  background-color: #6be4d4 !important;
+}
+
+.red-btn {
+  background-color: #fb845c !important;
+  border: none !important;
+  color: white !important;
+  font-size: large !important;
+  font-weight: bold !important;
+}
+
+.red-btn:hover {
+  background-color: #ff926d !important;
+}
+
+/*********** Search CSS **********************/
+.search-input {
+  /* width: 40vw !important; */
+  border: none !important;
+  border-radius: 0.5em !important;
+  box-shadow: inset 0 0 5px #e0e0e0 !important;
+  /* padding: 0.75em !important; */
+  /* margin-top: 20px; */
+}
+
+.search-input:focus {
+  box-shadow: inset 0 0 5px goldenrod !important;
+  outline: none;
+}
+
+.search-select:focus {
+  box-shadow: inset 0 0 5px goldenrod !important;
+  outline: none;
+}
+
+.search-btn {
+  color: grey !important;
+  font-family: "Merriweather";
+  background: #80d6d2 !important;
+  border: none !important;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  margin-right: 5px;
+}
+.reset-btn {
+  width: 100px !important;
+  border-radius: 5px !important;
+  box-shadow: 2px 2px 5px grey !important;
+  background-color: #fa9d7f !important;
+  border: none !important;
+  margin-left: 0;
+}
+.reset-btn:hover {
+  background-color: #fab59d !important;
+  box-shadow: 2px 2px 10px grey !important;
+}
+
+.search-btn:hover {
+  background-color: #99ebe7 !important;
+  box-shadow: 2px 2px 10px grey !important;
+}
+
+.search-btn:active {
+  box-shadow: 2px 2px 2px grey;
+}
+.search-select {
+  font-family: "Merriweather";
+  border: none !important;
+  border-radius: 0.5em !important;
+  box-shadow: inset 0 0 5px #e0e0e0 !important;
+}
+
+.search-form {
+  width: auto !important;
+  background-color: white !important;
+  border: none !important;
+  margin-top: 60px;
+  margin: 30px auto;
+}
+
+.apply-btn {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.nav-bkg {
+  background-color: #706d50;
+  font-family: "Merriweather";
+  font-size: larger;
+  padding-top: 30px;
+}
+.logout {
+  background-color: #dddac5 !important;
+  border: none;
+  float: right;
+}
+
+.logout:hover {
+  background-color: #dbd9cb !important;
+}
+
+.job-card {
+  margin: 5px auto;
+  width: 80%;
+  box-shadow: inset 0 0 5px #e0e0e0 !important;
+}
+
+.job-card-header {
+  background-color: #dddac5 !important;
+  box-shadow: inset 0 0 5px #e0e0e0 !important;
+}
+
+.fav-Icon {
+  color: #fb845c !important;
+  background-color: white !important;
+  border: 2px #f1997b solid !important;
+  border-radius: 5px !important;
+  box-shadow: 2px 2px 5px grey;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.fav-Icon:hover {
+  background: #ebcdc5 !important;
+}
+
+.apply-btn {
+  color: grey !important;
+  font-family: "Merriweather";
+  background: #80d6d2 !important;
+  border: none !important;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.apply-btn:hover {
+  background-color: #99ebe7 !important;
+  box-shadow: 2px 2px 10px grey !important;
+}
+
+.apply-btn:active {
+  box-shadow: 2px 2px 2px grey;
+}
+
+.welcome {
+  margin-left: 15px !important;
+}
